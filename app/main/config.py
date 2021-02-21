@@ -9,6 +9,11 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', 'w%;!V6N{JG#^l>`W%woL`Zp{@UO*g')
     DEBUG = False
+    LOG_TYPE = 'file'
+    APP_LOG_NAME = 'hotel-backend-rest.log'
+    WWW_LOG_NAME = 'hotel-navigation.log'
+    LOG_MAX_BYTES = 100_000_000
+    LOG_COPIES = 5
     ENABLED_MODULES = ['user', 'shared']
     JWT_SECRET_KEY = 'z8DUpH4ex5'
     JWT_ACCESS_TOKEN_EXPIRES = 28800
