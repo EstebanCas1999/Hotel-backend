@@ -11,4 +11,4 @@ class CreateUserSchema(Schema):
     surnames = fields.String(required=True, data_key='surnames')
     role = fields.String(required=True, data_key='role')
     password = fields.String(required=True, data_key='password')
-    username = fields.String(required=True, data_key='username')
+    document_number = fields.String(required=True, data_key='documentNumber')
