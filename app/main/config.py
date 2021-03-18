@@ -14,7 +14,7 @@ class Config:
     WWW_LOG_NAME = 'hotel-navigation.log'
     LOG_MAX_BYTES = 100_000_000
     LOG_COPIES = 5
-    ENABLED_MODULES = ['auth', 'user', 'shared']
+    ENABLED_MODULES = ['auth', 'user', 'shared', 'hotel', 'administration', 'room']
     JWT_SECRET_KEY = 'z8DUpH4ex5'
     JWT_ACCESS_TOKEN_EXPIRES = 28800
     JWT_ALGORITHM = 'HS512'
