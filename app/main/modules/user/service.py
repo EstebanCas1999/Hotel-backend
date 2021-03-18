@@ -1,5 +1,5 @@
 from werkzeug.security import generate_password_hash
-
+from app.main.modules.shared.enums.role_enum import RoleEnum
 from app.main.modules.shared.generic_utils import GenericService, transaction
 from app.main.modules.user.model import User
 from app.main.modules.user.schemas import CreateUserSchema
@@ -17,7 +17,7 @@ class UserService(GenericService):
         if exist_user is None:
             user = User()
             user.document_number = document_number
-            user.role = create_user_schema.get('role', '')
+            user.role = RoleEnum.CLIENT
             user.name = create_user_schema.get('name', '')
             user.surnames = create_user_schema.get('surnames')
             user.password = generate_password_hash(create_user_schema.get('password', ''), method='sha256')

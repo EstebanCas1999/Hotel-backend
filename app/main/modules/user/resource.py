@@ -11,4 +11,4 @@ class UserResource(Resource):
     def post(cls):
         create_user_schema_data = create_user_schema.load(request.get_json())
         UserService.create_user(create_user_schema_data)
-        return 'Usuario creado'
+

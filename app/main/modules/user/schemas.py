@@ -9,6 +9,5 @@ class RoleSchema(Schema):
 class CreateUserSchema(Schema):
     name = fields.String(required=True, data_key='name')
     surnames = fields.String(required=True, data_key='surnames')
-    role = fields.String(required=True, data_key='role')
     password = fields.String(required=True, data_key='password')
     document_number = fields.String(required=True, data_key='documentNumber')
