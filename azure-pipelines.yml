@@ -18,10 +18,6 @@ steps:
     python -m pip install --upgrade pip
   displayName: 'Install dependencies'
 
-- script: |
-    python src/manage.py run
-  displayName: 'run application'
-
 - task: CopyFiles@2
   inputs:
     targetFolder: $(Build.ArtifactStagingDirectory)
