@@ -1,0 +1,13 @@
+flask = "*"
+flask-restful = "*"
+flask-script = "*"
+flask-jwt-extended = "*"
+flask-sqlalchemy = "*"
+pymysql = "*"
+flask-cors = "*"
+marshmallow = "*"
+flask-migrate = "*"
+python-dotenv = "*"
+
+[requires]
+python_version = "3.7"
