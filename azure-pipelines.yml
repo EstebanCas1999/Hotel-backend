@@ -19,11 +19,6 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
-
-- script: |
     python manage.py run
   displayName: 'run application'
 
